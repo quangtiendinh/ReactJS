@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+body {
+    font-size: 0.95em;
+    background-color:#fff;
+}
+p, h1,h2,h3,h4,h5,h6 {
+    margin:0;
+}
+a{
+    color: #6f7074;
+}
+a:hover{
+    text-decoration: none;
+    color: #6f7074;
+}
+.section {
+    margin-bottom: 2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.posts .post .card {
+    margin-bottom:2em;
+    min-height: 24.2em;
+    display: block;
+}
+.posts .post .card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px 0 rgba(32, 32, 32, 0.15);
+    transition: all 0.3s ease;
+}
+.posts .post .card .card-img-top {
+    padding:0.1em;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: .25rem;
+    min-height: 14em;
+}
+.posts .post .card .author {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.posts .post .card .card-body {
+    padding:1em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.posts .post .card .card-body .card-title {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.posts .post .card-footer {
+    background-color:transparent;
+    font-size: 0.85em;
+    padding: 1em;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.posts .post .card-footer span {
+    margin-left: 0.3em;
+}
+@media (min-width: 1350px) {
+    .container{
+        max-width: 1320px;
+    }
 }
