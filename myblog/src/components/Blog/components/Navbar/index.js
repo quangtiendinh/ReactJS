@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import * as ROUTES from '../../../../shared/routes';
 
 export default class Navbar extends React.Component {
     render() {
@@ -8,10 +10,10 @@ export default class Navbar extends React.Component {
                     <div className="container">
                         <ul className="navbar-nav nav-main-menu mr-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Trang chủ</a>
+                                <Link to={ROUTES.HOME} className="nav-link">Trang chủ</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Tin tức</a>
+                                <Link to={ROUTES.POSTS} className="nav-link">Tin tức</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Sản phẩm</a>

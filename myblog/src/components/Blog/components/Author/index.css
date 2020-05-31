@@ -1,0 +1,18 @@
+.author-component {
+    padding: 0.8em 1em;
+    box-sizing: border-box;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+.author-component .avatar {
+    width:7em;
+    height: 7em;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.author-component .name {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}

@@ -1,0 +1,13 @@
+.tags-component {
+    font-size: 0.95em;
+}
+.tags-component svg {
+    margin-right: 0.5em;
+}
+.tags-component .tag-item a {
+    display: inline-block;
+    background-color: rgba(77, 220, 249, 0.3);
+    margin-right: 0.5em;
+    padding: 0 0.7em;
+    border-radius: 5%;
+}
