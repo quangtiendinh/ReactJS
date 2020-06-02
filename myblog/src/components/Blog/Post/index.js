@@ -2,18 +2,19 @@ import React from 'react';
 import './index.css';
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faUser, faCalendarAlt, faComment, faEye} from "@fortawesome/free-solid-svg-icons";
+import {faUser, faCalendarAlt, faComment, faEye, faClock} from "@fortawesome/free-solid-svg-icons";
 import Author from "../components/Author";
 import Tag from "../components/Tag";
 import FBLikeButton from "../components/Socials/FBLikeButton";
 import FBComment from "../components/Socials/FBComment";
+import RelatedPosts from "../../../shared/components/RelatedPosts";
 
 export default class Post extends React.Component {
     render() {
         return (
             <div className="row content">
                 <div className="col-lg-9 col-md-8">
-                    <div className="post-detail">
+                    <div className="post-detail widget-content">
                         <h1 className="post-title">Khóa học lập trình Python cho người mới bắt đầu phần 1</h1>
                         <div className="post-info">
                             <span className="author metadata">
@@ -43,10 +44,6 @@ export default class Post extends React.Component {
                             <p>Giao diện admin trực quan và dễ tiếp cận, mặc định sẽ có 2 ngôn ngữ trong admin là Tiếng Anh và Tiếng Việt, dễ dàng sử dụng cho khách hàng người Việt mà không cần việt hoá.</p>
                         </div>
                         {/*./ post-body*/}
-                        <div className="post-author">
-                            <Author name="QuangTienIT"/>
-                        </div>
-                        {/*./ post-author*/}
                         <div className="post-tags">
                             <Tag post-id="1"/>
                         </div>
@@ -55,11 +52,16 @@ export default class Post extends React.Component {
                             <FBLikeButton dataHref="https://developers.facebook.com/docs/plugins/" isShare={true}/>
                         </div>
                         {/*./ post-social*/}
+                        <div className="post-author">
+                            <Author name="QuangTienIT"/>
+                        </div>
                         <div className="post-comments">
                             <FBComment dataHref="https://sangplus.com/gioi-thieu-ve-botble-cms.html"/>
                         </div>
                         {/*./ post-comments*/}
                     </div>
+                    {/*./ post-detail*/}
+                    <RelatedPosts post-id="1" post-number="1" post-column="3"/>
                 </div>
                 <div className="col-lg-3 col-md-4 sidebar">
                     <h1>Sidebar</h1>

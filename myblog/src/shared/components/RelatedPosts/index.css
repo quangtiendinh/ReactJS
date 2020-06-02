@@ -1,0 +1,45 @@
+.related-posts-component .post {
+    margin-bottom: 1em;
+    padding: 0;
+    padding-right: 1em;
+}
+.related-posts-component .post:nth-child(3n + 1) {
+    padding-left: 1em;
+ }
+.related-posts-component .post .card {
+    min-height: 19.5em;
+}
+.related-posts-component .post .card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px 0 rgba(32, 32, 32, 0.15);
+    transition: all 0.3s ease;
+}
+.related-posts-component .post .card-img-top {
+    height: 11em;
+    padding:0.1em;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+.related-posts-component .post .card-body {
+    padding: 0.2em 0.8em;
+}
+.related-posts-component .post .card-body .author {
+    font-size: 0.9em;
+}
+.related-posts-component .post .card-body .card-title {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.related-posts-component .post .card-footer {
+    width: 100%;
+    padding: 0.2em 0.5em;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+.related-posts-component .post svg {
+    margin-right: 0.4em;
+    font-size: 0.85em;
+}

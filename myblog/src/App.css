@@ -15,6 +15,23 @@ a:hover{
 .section {
     margin-bottom: 2em;
 }
+.widget-content {
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    background-color: #fff;
+    line-height: 2em;
+    margin-bottom: 1em;
+}
+.widget-content .widget-header {
+    margin-bottom: 1em;
+}
+.widget-content .widget-header .widget-text-header {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 .posts .post .card {
     margin-bottom:2em;
@@ -60,8 +77,8 @@ a:hover{
 .posts .post .card-footer span {
     margin-left: 0.3em;
 }
-@media (min-width: 1350px) {
-    .container{
-        max-width: 1320px;
-    }
-}
+/*@media (min-width: 1350px) {*/
+/*    .container{*/
+/*        max-width: 1320px;*/
+/*    }*/
+/*}*/

@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 export default class Tag extends React.Component {
     render() {
         return (
-            <div className="tags-component mb-3">
+            <div className="tags-component mb-2">
                 <p>
                     <FontAwesomeIcon icon={faTags}/>
                     <span className="tag-item"><Link to="">Lập trình java</Link></span>

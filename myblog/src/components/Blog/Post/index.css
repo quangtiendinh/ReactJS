@@ -1,14 +1,6 @@
 .content {
     margin-bottom: 1em;
 }
-.post-detail {
-    padding: 1em;
-    box-sizing: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    box-shadow: 0 1px 3px rgba(0,0,0,.1);
-    background-color: #fff;
-    line-height: 2em;
-}
 .post-detail .post-title {
     font-size: 1.85em;
     margin-bottom: 0.5em;
