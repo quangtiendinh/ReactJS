@@ -8,6 +8,9 @@ p, h1,h2,h3,h4,h5,h6 {
 a{
     color: #6f7074;
 }
+svg {
+    margin-right: 0.5em;
+}
 a:hover{
     text-decoration: none;
     color: #6f7074;
@@ -24,13 +27,19 @@ a:hover{
     line-height: 2em;
     margin-bottom: 1em;
 }
+.no-padding {
+    padding: 0;
+}
 .widget-content .widget-header {
     margin-bottom: 1em;
 }
 .widget-content .widget-header .widget-text-header {
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-weight: bold;
     text-transform: uppercase;
+}
+.sidebar-container .sidebar-widget .widget-body .list-group li a:hover{
+    color: #2c3e50;
 }
 
 .posts .post .card {
@@ -77,8 +86,41 @@ a:hover{
 .posts .post .card-footer span {
     margin-left: 0.3em;
 }
+
+.sidebar-container .sidebar-widget .media img {
+    width: 5.5em;
+    height: 5.5em;
+}
+.sidebar-container .sidebar-widget .media .post-title {
+    line-height: 1.5em;
+    font-size: 1.05em;
+    margin-top: -0.4em;
+}
+.sidebar-container .sidebar-widget .media {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 1em 0;
+}
+.sidebar-container .sidebar-widget .media:first-child {
+    padding-top: 0;
+}
+.sidebar-container .sidebar-widget .media:last-child {
+    border: 0;
+    padding-bottom: 0;
+}
 /*@media (min-width: 1350px) {*/
 /*    .container{*/
 /*        max-width: 1320px;*/
 /*    }*/
 /*}*/
+
+@media (min-width: 992px) {
+    .main-container {
+        max-width: 70%;
+        flex: 0 0 70%;
+        padding-right:0;
+    }
+    .sidebar-container {
+        max-width: 30%;
+        flex: 0 0 30%;
+    }
+}
