@@ -3,10 +3,10 @@ import './index.css';
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faUser, faCalendarAlt, faComment, faEye, faClock, faHandPointRight} from "@fortawesome/free-solid-svg-icons";
-import Author from "../components/Author";
-import Tag from "../components/Tag";
-import FBLikeButton from "../components/Socials/FBLikeButton";
-import FBComment from "../components/Socials/FBComment";
+import Author from "../../../shared/components/Author";
+import Tag from "../../../shared/components/Tag";
+import FBLikeButton from "../../../shared/components/Facebook/FBLikeButton";
+import FBComment from "../../../shared/components/Facebook/FBComment";
 import RelatedPosts from "../../../shared/components/RelatedPosts";
 import Banner from "../../../shared/components/Banner";
 

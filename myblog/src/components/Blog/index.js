@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Logo from "./components/Logo";
+import Header from "../../shared/components/Header";
+import Navbar from "../../shared/components/Navbar";
+import Footer from "../../shared/components/Footer";
+import Logo from "../../shared/components/Logo";
 import { Switch, Route } from 'react-router-dom';
 import About from "./About";
 import Home from "./Home";
