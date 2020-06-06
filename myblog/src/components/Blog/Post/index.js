@@ -18,6 +18,7 @@ export default class Post extends React.Component {
                 <div className="col-lg-9 col-md-9 main-container">
                     <div className="post-detail widget-content">
                         <h1 className="post-title">Khóa học lập trình Python cho người mới bắt đầu phần 1</h1>
+                        <Banner src="https://www.yydevelopment.com/wp-content/uploads/2018/12/shopify-728x90-banner-example.gif" href="" title="Remitano" width="728" height="90" isSidebar={true}/>
                         <div className="post-info">
                             <span className="author metadata">
                                 <FontAwesomeIcon icon={faUser}/>

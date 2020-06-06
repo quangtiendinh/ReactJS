@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .widget-banner .widget-body {
-    padding: 0.3em 0.5em;
+    padding: 0.3em;
 }
 .widget-banner .widget-body .inner-content a img {
     vertical-align: middle;
