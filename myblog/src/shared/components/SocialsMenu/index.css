@@ -1,0 +1,36 @@
+.socials-menu-component svg {
+    margin-right: 0;
+    font-size: 1.2em;
+}
+.socials-menu-component .nav-item .nav-link.facebook:hover{
+    background-color: #108CEB;
+}
+.socials-menu-component .nav-item .nav-link.youtube:hover{
+    background-color: #FD0012;
+}
+.socials-menu-component .nav-item .nav-link.skype:hover{
+    background-color: #0FABED;
+}
+.socials-menu-component .nav-item .nav-link.github:hover{
+    background-color: #333333;
+}
+.socials-menu-component .nav .nav-item {
+
+    margin-right: 0.5em;
+    width: 2.3em;
+    height: 2.3em;
+}
+.socials-menu-component .nav .nav-item:last-child{
+    margin-right: 0;
+}
+.socials-menu-component .nav .nav-item .nav-link {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    transition: background-color .20s ease-in;
+}
