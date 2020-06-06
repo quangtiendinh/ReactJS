@@ -1,0 +1,25 @@
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-wrapper .pagination {
+
+}
+.pagination-wrapper .pagination  .page-item {
+    margin-right: 0.5em;
+    overflow: hidden;
+}
+.pagination-wrapper .pagination  .page-item .page-link {
+    padding: 0.5em 1em;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border-radius: 0;
+    color: #000;
+    margin: 0;
+}
+.pagination-wrapper .pagination .active .page-link {
+    background-color: #e9ebee;
+    color: #000;
+}

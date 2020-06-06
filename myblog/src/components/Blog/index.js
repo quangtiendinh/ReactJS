@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import * as ROUTES from '../../shared/routes';
 import './index.css';
 import Post from "./Post";
+import Categories from "./Categories";
 
 export default class Blog extends React.Component {
 
@@ -37,6 +38,9 @@ export default class Blog extends React.Component {
                             </Route>
                             <Route path={ROUTES.POSTS}>
                                 <Post/>
+                            </Route>
+                            <Route path={ROUTES.CATEGORIES}>
+                                <Categories/>
                             </Route>
                         </Switch>
                     </div>

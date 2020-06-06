@@ -16,7 +16,9 @@ export default class Navbar extends React.Component {
                                 <Link to={ROUTES.POSTS} className="nav-link">Tin tức</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Sản phẩm</a>
+                                <Link to={ROUTES.CATEGORIES} className="nav-link">
+                                    Sản phẩm
+                                </Link>
                             </li>
                         </ul>
                         {/*./ nav-main-menu*/}

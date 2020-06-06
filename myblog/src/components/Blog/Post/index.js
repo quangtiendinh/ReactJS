@@ -10,6 +10,7 @@ import FBComment from "../../../shared/components/Facebook/FBComment";
 import RelatedPosts from "../../../shared/components/RelatedPosts";
 import Banner from "../../../shared/components/Banner";
 import Sidebar from "../../../shared/components/Sidebar";
+import PostMeta from "../../../shared/components/PostMeta";
 
 export default class Post extends React.Component {
     render() {
@@ -19,25 +20,7 @@ export default class Post extends React.Component {
                     <div className="post-detail widget-content">
                         <h1 className="post-title">Khóa học lập trình Python cho người mới bắt đầu phần 1</h1>
                         <Banner src="https://www.yydevelopment.com/wp-content/uploads/2018/12/shopify-728x90-banner-example.gif" href="" title="Remitano" width="728" height="90" isSidebar={true}/>
-                        <div className="post-info">
-                            <span className="author metadata">
-                                <FontAwesomeIcon icon={faUser}/>
-                                <Link to="/author">QuangTienIT</Link>
-                            </span>
-                            <span className="date metadata">
-                                <FontAwesomeIcon icon={faCalendarAlt}/>
-                                <span>{new Date().toLocaleDateString()}</span>
-                            </span>
-                            <span className="view metadata">
-                                <FontAwesomeIcon icon={faEye}/>
-                                <span>23</span>
-                            </span>
-                            <span className="comment metadata">
-                                <FontAwesomeIcon icon={faComment}/>
-                                <span>12</span>
-                            </span>
-                        </div>
-                        {/*./ post-info*/}
+                        <PostMeta/>
                         <div className="post-body">
                             <p>Botble CMS (bót bồ) là CMS được xây dựng trên nền tảng Laravel framework do team mình (Botble team https://botble.com) phát triển từ 2015.
                             Phiên bản hiện tại là 5.4 sử dụng Laravel 7.x.</p>

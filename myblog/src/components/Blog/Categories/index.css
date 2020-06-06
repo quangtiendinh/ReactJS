@@ -1,0 +1,31 @@
+.categories-wrapper .category-description {
+    padding: 1em;
+    box-sizing: border-box;
+}
+.categories-wrapper .category-description .text-header {
+    font-size: 1.9em;
+    margin-bottom: 0.3em;
+}
+.categories-wrapper .category-description .category-excerpt {
+    font-size: 1em;
+}
+.categories-wrapper .post-detail .post-body {
+    margin-bottom: 0;
+}
+.categories-wrapper .post-detail .post-title {
+    font-size: 1.6em;
+}
+.categories-wrapper .post-detail .post-item {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.categories-wrapper .post-detail .post-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.categories-wrapper .post-detail .post-item img {
+    height: 10.8em;
+    width: 14em;
+}
