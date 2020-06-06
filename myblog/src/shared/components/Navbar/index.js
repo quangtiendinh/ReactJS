@@ -3,17 +3,19 @@ import './index.css';
 import {Link} from "react-router-dom";
 import * as ROUTES from '../../routes';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faSearch} from "@fortawesome/free-solid-svg-icons";
+import {faHome, faSearch} from "@fortawesome/free-solid-svg-icons";
 
 export default class Navbar extends React.Component {
     render() {
         return (
-            <div className="navbar-wrapper section" id="main-menu-wrapper">
+            <div className="navbar-wrapper" id="main-menu-wrapper">
                 <nav className="navbar navbar-expand-sm">
                     <div className="container">
                         <ul className="navbar-nav nav-main-menu mr-auto">
                             <li className="nav-item">
-                                <Link to={ROUTES.HOME} className="nav-link">Trang chủ</Link>
+                                <Link to={ROUTES.HOME} className="nav-link nav-link-home">
+                                    <FontAwesomeIcon icon={faHome}/>
+                                </Link>
                             </li>
                             <li className="nav-item">
                                 <Link to={ROUTES.POSTS} className="nav-link">Tin tức</Link>
@@ -21,6 +23,41 @@ export default class Navbar extends React.Component {
                             <li className="nav-item">
                                 <Link to={ROUTES.CATEGORIES} className="nav-link">
                                     Sản phẩm
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to={ROUTES.CATEGORIES} className="nav-link">
+                                    PHP
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to={ROUTES.CATEGORIES} className="nav-link">
+                                    Java
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to={ROUTES.CATEGORIES} className="nav-link">
+                                    HTML/CSS
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to={ROUTES.CATEGORIES} className="nav-link">
+                                  Javascript
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to={ROUTES.CATEGORIES} className="nav-link">
+                                    Spring
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to={ROUTES.CATEGORIES} className="nav-link">
+                                    Laravel
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to={ROUTES.CATEGORIES} className="nav-link">
+                                    Bootstrap
                                 </Link>
                             </li>
                         </ul>

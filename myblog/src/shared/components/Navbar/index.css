@@ -1,5 +1,6 @@
 #main-menu-wrapper {
     background-color: #34495e;
+    margin-bottom: 1em;
 }
 #main-menu-wrapper .navbar {
     padding: 0;
@@ -7,10 +8,26 @@
 #main-menu-wrapper .nav-item {
     border-right: 1px solid rgba(0,0,0,.125);
     box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-menu-wrapper .nav-item:last-child {
+    border-right: 0;
+    box-shadow: 0;
+}
+#main-menu-wrapper .nav-item .nav-link-home {
+    font-size: 1.5em;
+    padding:0.2em 0.6em;
+    border-left: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+#main-menu-wrapper .nav-item .nav-link-home svg {
+    margin-right: 0;
 }
 #main-menu-wrapper .nav-item a {
     display: block;
-    padding: 1.2em 1em;
+    padding: 1.1em 1.5em;
     color: #f7f7f7;
     font-size: 0.8em;
     font-weight: bold;
