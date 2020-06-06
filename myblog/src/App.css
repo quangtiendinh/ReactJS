@@ -107,6 +107,28 @@ a:hover{
     border: 0;
     padding-bottom: 0;
 }
+.sidebar-container .sidebar-widget .nav-tabs {
+    border-bottom: 0;
+}
+.sidebar-container .sidebar-widget .nav-tabs li {
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border-right: 0;
+    display: flex;
+}
+.sidebar-container .sidebar-widget .nav-tabs li a.active {
+    background-color: rgba(77, 220, 249, 0.3);
+}
+.sidebar-container .sidebar-widget .nav-tabs li:last-child {
+    border-right: 1px solid rgba(0,0,0,.125);
+}
+.sidebar-container .sidebar-widget .nav-tabs li a {
+    display: inline-block;
+    padding: 0.2em 0.95em;
+    font-size: 0.83em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 /*@media (min-width: 1350px) {*/
 /*    .container{*/
 /*        max-width: 1320px;*/
