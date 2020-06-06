@@ -1,0 +1,28 @@
+#header-wrapper {
+    background-color: #2f6e91;
+    display: flex;
+    justify-content: center;
+}
+#header-wrapper .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-wrapper .logo {
+    padding: 2em 0;
+    box-sizing: border-box;
+}
+#header-wrapper .logo a {
+    display: block;
+}
+#header-wrapper .logo a img {
+    width:100%;
+}
+#header-wrapper .top-menu-wrapper {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+#header-wrapper .top-menu-wrapper a {
+    color: #fff;
+}

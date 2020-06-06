@@ -2,7 +2,6 @@ import React from 'react';
 import Header from "../../shared/components/Header";
 import Navbar from "../../shared/components/Navbar";
 import Footer from "../../shared/components/Footer";
-import Logo from "../../shared/components/Logo";
 import { Switch, Route } from 'react-router-dom';
 import About from "./About";
 import Home from "./Home";
@@ -19,8 +18,6 @@ export default class Blog extends React.Component {
             <div className="home-wrapper">
                 <Header/>
                 {/*./ header-wrapper*/}
-                <Logo/>
-                {/*./ logo-wrapper*/}
                 <Navbar/>
                 {/*./ navbar-wrapper*/}
 
