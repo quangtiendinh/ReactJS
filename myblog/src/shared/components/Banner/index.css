@@ -6,3 +6,6 @@
 .widget-banner .widget-body {
     padding: 0.3em 0.5em;
 }
+.widget-banner .widget-body .inner-content a img {
+    vertical-align: middle;
+}

@@ -9,7 +9,7 @@ export default class Sidebar extends React.Component {
     render() {
         return (
             <div className="col-lg-3 col-md-9 sidebar-container">
-                <Banner src="https://cafebitcoin.org/wp-content/uploads/2018/01/banner-remitano-300x250.png" href="" title="Remitano"/>
+                <Banner src="https://cafebitcoin.org/wp-content/uploads/2018/01/banner-remitano-300x250.png" href="" title="Remitano" width="300" height="250"/>
                 <div className="sidebar-widget widget-content widget-courses">
                     <div className="widget-header">
                         <h4 className="tex-header widget-text-header">
