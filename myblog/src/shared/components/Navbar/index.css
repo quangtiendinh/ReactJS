@@ -14,7 +14,7 @@
 }
 #main-menu-wrapper .nav-item:last-child {
     border-right: 0;
-    box-shadow: 0;
+    box-shadow: none;
 }
 #main-menu-wrapper .nav-item .nav-link-home {
     font-size: 1.5em;
