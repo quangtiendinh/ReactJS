@@ -8,6 +8,7 @@
  }
 .related-posts-component .post .card {
     min-height: 19.5em;
+    border-radius: 0;
 }
 .related-posts-component .post:nth-last-child(-n + 3) {
     margin-bottom: 0;
@@ -21,7 +22,6 @@
     height: 11em;
     padding:0.1em;
     box-sizing: border-box;
-    border-radius: 2%;
 }
 .related-posts-component .post .card-body {
     padding: 0.2em 0.8em;
@@ -30,7 +30,7 @@
     font-size: 0.9em;
 }
 .related-posts-component .post .card-body .card-title {
-    font-size: 1.1em;
+    font-size: 1.05em;
     line-height: 1.5em;
 }
 .related-posts-component .post .card-footer {

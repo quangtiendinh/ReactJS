@@ -1,6 +1,9 @@
 .content {
     margin-bottom: 1em;
 }
+.post-detail {
+    padding: 1em;
+}
 .post-detail .post-title {
     font-size: 1.85em;
     margin-bottom: 0.5em;

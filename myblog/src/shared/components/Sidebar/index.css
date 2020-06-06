@@ -1,0 +1,44 @@
+.sidebar-container .sidebar-widget .media img {
+    width: 5.5em;
+    height: 5.5em;
+}
+.sidebar-container .sidebar-widget .media .post-title {
+    line-height: 1.5em;
+    font-size: 1.05em;
+    margin-top: -0.4em;
+}
+.sidebar-container .sidebar-widget .media {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 1em 0;
+}
+.sidebar-container .sidebar-widget .media:first-child {
+    padding-top: 0;
+}
+.sidebar-container .sidebar-widget .media:last-child {
+    border: 0;
+    padding-bottom: 0;
+}
+.sidebar-container .sidebar-widget .nav-tabs {
+    border-bottom: 0;
+}
+.sidebar-container .sidebar-widget .nav-tabs li {
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border-right: 0;
+    display: flex;
+}
+.sidebar-container .sidebar-widget .nav-tabs li a.active {
+    background-color: #e9ebee;
+}
+.sidebar-container .sidebar-widget .nav-tabs li a:hover {
+    background-color: #dadde1;
+}
+.sidebar-container .sidebar-widget .nav-tabs li a {
+    display: inline-block;
+    padding: 0.2em 1.4em;
+    font-size: 0.83em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.sidebar-container .sidebar-widget .widget-body .list-group li a:hover{
+    color: #2c3e50;
+}

@@ -2,14 +2,17 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import './index.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faClock, faEye, faUser} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faClock, faEye, faUser} from "@fortawesome/free-solid-svg-icons";
 
 export default class RelatedPosts extends React.Component {
     render() {
         return (
             <div className="related-posts-component widget-content">
                 <div className="post-header widget-header">
-                    <h4 className="tex-header widget-text-header">Bài viết liên quan</h4>
+                    <h4 className="tex-header widget-text-header">
+                        <FontAwesomeIcon icon={faBars}/>
+                        <span>Bài viết liên quan</span>
+                    </h4>
                 </div>
                 {/*./ post-header*/}
                 <div className="post-body widget-body">

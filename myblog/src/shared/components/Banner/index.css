@@ -1,8 +1,8 @@
-.widget-banner {
-    padding: 0.3em 0.5em;
-}
 .widget-banner a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.widget-banner .widget-body {
+    padding: 0.3em 0.5em;
 }
