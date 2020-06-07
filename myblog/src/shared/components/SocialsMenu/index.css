@@ -24,6 +24,7 @@
     margin-right: 0;
 }
 .socials-menu-component .nav .nav-item .nav-link {
+    color: #f7f7f7;
     padding: 0;
     display: flex;
     width: 100%;

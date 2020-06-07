@@ -18,6 +18,10 @@ a:hover{
 .section {
     margin-bottom: 2em;
 }
+.clear {
+    clear: both;
+    overflow: hidden;
+}
 .widget-content {
     box-sizing: border-box;
     border: 1px solid rgba(0,0,0,.125);
