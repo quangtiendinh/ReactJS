@@ -10,6 +10,8 @@ import * as ROUTES from '../../shared/routes';
 import './index.css';
 import Post from "./Post";
 import Categories from "./Categories";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faSearch} from "@fortawesome/free-solid-svg-icons";
 
 export default class Blog extends React.Component {
 
@@ -22,25 +24,23 @@ export default class Blog extends React.Component {
                 {/*./ navbar-wrapper*/}
 
                 <div className="content-wrapper">
-                    <div className="container">
-                        <Switch>
-                            <Route exact path={ROUTES.HOME}>
-                                <Home/>
-                            </Route>
-                            <Route path={ROUTES.ABOUT}>
-                                <About/>
-                            </Route>
-                            <Route path={ROUTES.CONTACT}>
-                                <Contact/>
-                            </Route>
-                            <Route path={ROUTES.POSTS}>
-                                <Post/>
-                            </Route>
-                            <Route path={ROUTES.CATEGORIES}>
-                                <Categories/>
-                            </Route>
-                        </Switch>
-                    </div>
+                    <Switch>
+                        <Route exact path={ROUTES.HOME}>
+                            <Home/>
+                        </Route>
+                        <Route path={ROUTES.ABOUT}>
+                            <About/>
+                        </Route>
+                        <Route path={ROUTES.CONTACT}>
+                            <Contact/>
+                        </Route>
+                        <Route path={ROUTES.POSTS}>
+                            <Post/>
+                        </Route>
+                        <Route path={ROUTES.CATEGORIES}>
+                            <Categories/>
+                        </Route>
+                    </Switch>
                 </div>
                 {/*./ content-wrapper*/}
 
