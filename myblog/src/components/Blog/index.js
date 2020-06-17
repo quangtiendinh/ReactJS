@@ -6,12 +6,10 @@ import { Switch, Route } from 'react-router-dom';
 import About from "./About";
 import Home from "./Home";
 import Contact from "./Contact";
-import * as ROUTES from '../../shared/routes';
+import * as ROUTES from '../../shared/Routes';
 import './index.css';
 import Post from "./Post";
 import Categories from "./Categories";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faSearch} from "@fortawesome/free-solid-svg-icons";
 
 export default class Blog extends React.Component {
 

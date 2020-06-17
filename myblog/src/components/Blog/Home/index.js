@@ -3,8 +3,35 @@ import './index.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEye, faClock, faSearch} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
+import StringUtils from "../../../utils/StringUtils";
+import { Redirect } from 'react-router-dom';
+import * as ROUTES from '../../../shared/Routes';
 
 export default class Home extends React.Component {
+
+    state = {
+        searchQuery: ''
+    };
+
+    onSearch = (event) => {
+        event.preventDefault();
+        if (StringUtils.isEmpty(this.state.searchQuery)) {
+            return;
+        }
+        console.log(this.state.searchQuery);
+        this.renderRedirect();
+    };
+
+    renderRedirect = () => {
+        return <Redirect to={ROUTES.CATEGORIES}/>
+    };
+
+    onSearchChange = (event) => {
+        this.setState({
+            searchQuery: event.target.value
+        });
+    };
+
     render() {
         return(
             <div className="home">
@@ -13,8 +40,8 @@ export default class Home extends React.Component {
                         <h3 className="text-header">HÃY CÙNG TÌM HIỂU CÔNG NGHỆ WEB</h3>
                         <p className="slogan">Trang chia sẽ kiến thức về các ngôn ngữ lập trình và những kiến thức về kiếm tiền online bổ ích.</p>
 
-                        <form className="form-inline search-form-home">
-                            <input className="form-control text-search" type="search" placeholder="Tìm kiếm..."
+                        <form className="form-inline search-form-home" onSubmit={this.onSearch}>
+                            <input className="form-control text-search" name="searchQuery" value={this.state.searchQuery} onChange={this.onSearchChange} type="search" placeholder="Tìm kiếm..."
                                    aria-label="Search" />
                             <button className="btn btn-search" type="submit">
                                 <FontAwesomeIcon icon={faSearch}/>
@@ -283,7 +310,6 @@ export default class Home extends React.Component {
                           </div>
                       </div>
                     </div>
-                    /*./ hom-wrapper*/
                 </div>
             </div>
         );

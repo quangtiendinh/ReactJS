@@ -1,8 +1,7 @@
 import React from "react";
 import './index.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faUser} from "@fortawesome/free-solid-svg-icons";
-import {faFacebook, faFacebookF, faGithub, faSkype, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faGithub, faSkype, faYoutube} from "@fortawesome/free-brands-svg-icons";
 
 export default class SocialsMenu extends React.Component {
     render() {
