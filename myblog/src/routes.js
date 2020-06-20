@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import * as ROUTES from './shared/Routes';
 import Blog from "./components/Blog";
 import Admin from "./components/Admin";
-import Login from "./shared/components/Auth/Login";
+import Auth from "./shared/components/Auth";
 
 export default class AppRoutes extends React.Component {
     render() {
@@ -13,8 +13,8 @@ export default class AppRoutes extends React.Component {
                 <Route path={ROUTES.LOGIN}>
                     <Redirect to={ROUTES.AUTH_LOGIN}/>
                 </Route>
-                <Route path={ROUTES.AUTH_LOGIN}>
-                    <Login/>
+                <Route path={ROUTES.AUTH}>
+                    <Auth/>
                 </Route>
                 <Route path={ROUTES.HOME} component={Blog}/>
             </Switch>
